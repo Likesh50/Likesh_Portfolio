@@ -5,7 +5,6 @@ import {
   Contact,
   Header,
   Skills,
-  Testimonial,
   Work,
 } from "./containers";
 
