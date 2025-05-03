@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
-import { client } from "../../client";
 
 import "./Contact.scss";
 
@@ -20,27 +19,17 @@ const Contact = () => {
 
   const handleChangeInput = (e) => {
     const { name: fieldName, value } = e.target;
-
-    setFormData((prev) => {
-      return { ...prev, [fieldName]: value };
-    });
+    setFormData((prev) => ({ ...prev, [fieldName]: value }));
   };
 
   const handleSubmit = () => {
     setIsLoading(true);
-
-    const contact = {
-      _type: "contact",
-      name: name,
-      email: email,
-      subject: subject,
-      message: message,
-    };
-
-    client.create(contact).then((data) => {
+    
+    // Simulating form submission
+    setTimeout(() => {
       setIsLoading(false);
       setIsFormSubmitted(true);
-    });
+    }, 2000);
   };
 
   return (
@@ -105,10 +94,10 @@ const Contact = () => {
           </div>
           <button
             type="button"
-            className=" portfolio-button"
+            className="portfolio-button"
             onClick={handleSubmit}
           >
-            {loading ? "Sending Message" : "Send Message"}
+            {loading ? "Sending Message..." : "Send Message"}
           </button>
         </div>
       ) : (

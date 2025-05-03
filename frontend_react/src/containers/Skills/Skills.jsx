@@ -53,7 +53,7 @@ const Skills = () => {
     {
       year: "2024",
       works: [
-        { name: "Hackathon Winner", company: "Smart India Hackathon 2025", desc: "Developed automated annual report generation portal for educational institution." },
+        { name: "Hackathon Winner", company: "Smart India Hackathon 2024", desc: "Developed automated annual report generation portal for educational institution." },
         { name: "FreeLancing - Marathon ", company: "Sri Narayani group of Schools", desc: "Developed a landing page for Vellore Marathon held for Drug Awareness" },
         { name: "FreeLancing - Competition", company: "Alama Abacus International", desc: "Developed result generation application for state and national level competition" },
         { name: "Web Developer Intern", company: "R.M.K. Group of Institution", desc: "Developed 4 applications for college use" },

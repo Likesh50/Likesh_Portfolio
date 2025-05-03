@@ -3,7 +3,6 @@ import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
-import { client, urlFor } from "../../client";
 import "./Work.scss";
 
 import image from '../../assets/competition.jpeg';
